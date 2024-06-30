@@ -2,7 +2,7 @@
 
 **Note:** ScaleLogix is currently a work in progress. The capabilities and features described here have not yet been fully tested. This system is under active development, and details may change as we continue to refine the architecture.
 
-ScaleLogix is designed to efficiently manage up to 30 billion requests per day, leveraging a robust, scalable architecture. Developed during a hackathon, this solution uses a combination of load balancers, multi-region servers, Kafka clusters, and a data lake to ensure high availability and performance.
+ScaleLogix is designed to efficiently manage up to 30 billion requests per day, leveraging a robust, scalable architecture. Developed during a hackathon, this solution uses a combination of load balancers, multi-region servers, Kafka clusters, and BigQuery for high availability and performance.
 
 ## System Capacity
 
@@ -31,22 +31,20 @@ ScaleLogix is designed to efficiently manage up to 30 billion requests per day, 
   - Validated Messages
 - **Determination of the necessary number of partitions**
 
-### Validation and Processing
-
-- **Multi-region consumer setup for validating messages and pushing to a different topic**
-- **Consumers run in parallel with partitions for maximum efficiency**
-
 ### Data Streaming and Storage
 
-- **Streaming of validated messages to the data lake using Hudi Streamer**
-- **Deployment of a data lake and Hudi for data management**
-- **NO-SQL database for metadata management, including partitions and topic names**
+- **Messages are validated, then streamed from Kafka directly into BigQuery for efficient data processing and storage**
 
 ### Monitoring and Operations
 
 - **Deployment of a dashboard to monitor system metrics and performance**
-- **Integration of the dashboard with data lake using Hudi or Hive**
+- **Integration of the dashboard with BigQuery for real-time data analytics**
 - **Estimation and monitoring of infrastructure costs**
+
+## Testing
+
+- **Script to simulate 1.25 billion logs per hour for stress testing**
+
 
 ## Contributions
 
