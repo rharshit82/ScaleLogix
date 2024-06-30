@@ -1,5 +1,9 @@
 # ScaleLogix
 
+## Idea
+![Logger Idea](/idea-image.png "Logger Idea")
+
+
 **Note:** ScaleLogix is currently a work in progress. The capabilities and features described here have not yet been fully tested. This system is under active development, and details may change as we continue to refine the architecture.
 
 ScaleLogix is designed to efficiently manage up to 30 billion requests per day, leveraging a robust, scalable architecture. Developed during a hackathon, this solution uses a combination of load balancers, multi-region servers, Kafka clusters, and BigQuery for high availability and performance.
