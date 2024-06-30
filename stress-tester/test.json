@@ -1,0 +1,37 @@
+{
+    "event": "IMPORTANT_EVENT_1",
+    "_id": "65f42b01d5c14c850f10eb24",
+    "index": 0,
+    "guid": "adb5e0bb-86d6-45ea-999f-b137d9ae4461",
+    "isActive": true,
+    "balance": "$3,403.54",
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "eyeColor": "brown",
+    "name": "Palmer Slater",
+    "gender": "male",
+    "company": "TROPOLIS",
+    "email": "palmerslater@tropolis.com",
+    "phone": "+1 (810) 579-2308",
+    "address": "759 Lake Place, Calverton, Vermont, 321",
+    "about": "In amet dolore est esse est veniam deserunt commodo irure. Occaecat deserunt qui do ea proident laborum cillum aute officia ex ut do sint. Ea cupidatat sunt duis excepteur velit. Ut culpa et ut esse dolore ex sit aliqua aliquip deserunt non magna ex reprehenderit.\r\n",
+    "registered": "2016-08-01T07:25:24 -06:-30",
+    "latitude": -85.134891,
+    "longitude": 110.099424,
+    "tags": [
+      "ullamco",
+      "magna",
+      "non",
+      "excepteur",
+      "ea",
+      "adipisicing",
+      "veniam"
+    ],
+    "friends": [
+      { "id": 0, "name": "Catalina Vasquez" },
+      { "id": 1, "name": "Sandy Mclaughlin" },
+      { "id": 2, "name": "Marta Klein" }
+    ],
+    "greeting": "Hello, Palmer Slater! You have 2 unread messages.",
+    "favoriteFruit": "banana"
+  }

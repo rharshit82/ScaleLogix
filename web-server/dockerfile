@@ -1,0 +1,12 @@
+FROM golang
+
+WORKDIR /app
+
+COPY /sstl/web-server/dockerfile .
+
+RUN go mod download
+
+EXPOSE 8080
+
+# Run the command
+CMD ["go", "run", "main.go"]
